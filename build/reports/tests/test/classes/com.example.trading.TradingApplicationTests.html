@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - TradingApplicationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>TradingApplicationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.example.trading.html">com.example.trading</a> &gt; TradingApplicationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.908s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">contextLoads()</td>
+<td class="success">0.908s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>11:42:17.494 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.trading.TradingApplicationTests]: TradingApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:42:17.612 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.trading.TradingApplication for test class com.example.trading.TradingApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.2)
+
+2024-02-01T11:42:18.027-06:00  INFO 86169 --- [    Test worker] c.e.trading.TradingApplicationTests      : Starting TradingApplicationTests using Java 21.0.1 with PID 86169 (started by fiyd in /Users/fiyd/Downloads/trading)
+2024-02-01T11:42:18.030-06:00  INFO 86169 --- [    Test worker] c.e.trading.TradingApplicationTests      : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2024-02-01T11:42:18.858-06:00  INFO 86169 --- [    Test worker] n.j.alpaca.util.properties.PropertyUtil  : Using default properties for: alpaca.properties
+2024-02-01T11:42:19.484-06:00  INFO 86169 --- [aca.markets/...] n.j.alpaca.websocket.AlpacaWebsocket     : Stock Market Data websocket opened.
+2024-02-01T11:42:19.487-06:00  INFO 86169 --- [onPool-worker-1] n.j.a.w.marketdata.MarketDataWebsocket   : Stock Market Data websocket sending authentication message...
+SUCCESS : net.jacobpeterson.alpaca.model.endpoint.marketdata.common.realtime.control.SuccessMessage@cb8fd59[messageType=success,message=connected]
+2024-02-01T11:42:19.559-06:00  INFO 86169 --- [aca.markets/...] n.j.a.w.marketdata.MarketDataWebsocket   : Stock Market Data websocket authenticated.
+SUCCESS : net.jacobpeterson.alpaca.model.endpoint.marketdata.common.realtime.control.SuccessMessage@584c6ccc[messageType=success,message=authenticated]
+2024-02-01T11:42:19.561-06:00  INFO 86169 --- [    Test worker] n.j.a.w.marketdata.MarketDataWebsocket   : Requested subscriptions update: {&quot;action&quot;:&quot;subscribe&quot;,&quot;trades&quot;:[&quot;AAPL&quot;,&quot;MSFT&quot;,&quot;IBM&quot;,&quot;GOOG&quot;],&quot;bars&quot;:[&quot;*&quot;]}.
+SUBSCRIPTION : net.jacobpeterson.alpaca.model.endpoint.marketdata.common.realtime.control.SubscriptionsMessage@2a04b388[messageType=subscription,trades=[AAPL, GOOG, IBM, MSFT],quotes=[],bars=[*]]
+2024-02-01T11:42:20.023-06:00  INFO 86169 --- [    Test worker] c.e.trading.TradingApplicationTests      : Started TradingApplicationTests in 2.242 seconds (process running for 3.651)
+TRADE : net.jacobpeterson.alpaca.model.endpoint.marketdata.stock.realtime.trade.StockTradeMessage@935ee97[messageType=t,symbol=AAPL,tradeID=8073,price=185.9,timestamp=2024-02-01T17:42:20.728193894Z,exchange=V,size=67,conditions=[@, I],tape=C]
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>WARNING: A Java agent has been loaded dynamically (/Users/fiyd/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.14.11/f9cb566608fbac6bc7bf54901a7aa11543a989ee/byte-buddy-agent-1.14.11.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.5</a> at Feb 1, 2024, 11:42:21 AM</p>
+</div>
+</div>
+</body>
+</html>
