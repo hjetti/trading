@@ -38,3 +38,5 @@ Curl Command:
 ```agsl
 curl --location 'http://localhost:8081/tradeDecision'
 ```
+### More Questions
+If you are having any questions related to Alpaca API, please reach out to their community slack channel [here](https://join.slack.com/t/alpaca-community/shared_invite/zt-2brbihr06-WawuPRykKE2vE087fnQpfw). 
